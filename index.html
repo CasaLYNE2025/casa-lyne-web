@@ -1,65 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casa LYNE</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa LYNE — Catálogo digital</title>
+<meta name="description" content="Catálogo digital de Casa LYNE: cocinas integrales, closets, muebles de baño, puertas y estantes. Diseño con calidez y amor.">
+<link rel="icon" href="./images/logo/logo.png" type="image/png">
+<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="hero">
-    <img src="images/portada.jpg" alt="Cocina moderna Casa LYNE" class="hero-image" />
-    <div class="buttons">
-      <a href="#cocinas"><img src="images/logo.png" alt="Logo"> Cocinas</a>
-      <a href="#closets"><img src="images/logo.png" alt="Logo"> Clósets</a>
-      <a href="#banos"><img src="images/logo.png" alt="Logo"> Baños</a>
-      <a href="#estantes"><img src="images/logo.png" alt="Logo"> Estantes</a>
-      <a href="#puertas"><img src="images/logo.png" alt="Logo"> Puertas</a>
-    </div>
+<header class="header-hero">
+  <div class="header-overlay"></div>
+  <div class="hero-content">
+    <img class="hero-logo" src="./images/logo/logo.png" alt="Logo Casa LYNE">
+    <h1 class="hero-title">Casa LYNE</h1>
+    <p class="hero-sub">Diseño con corazón, hogares con vida</p>
   </div>
+  <div class="hero-quote">“Con Casa LYNE, cada rincón cuenta, cada espacio inspira.”</div>
+</header>
 
-  <section id="cocinas">
-    <h2>Cocinas</h2>
+<nav class="section-nav">
+  <button class="nav-btn" data-target="cocinas">Cocinas</button>
+  <button class="nav-btn" data-target="closets">Closets</button>
+  <button class="nav-btn" data-target="banos">Baños</button>
+  <button class="nav-btn" data-target="puertas">Puertas</button>
+  <button class="nav-btn" data-target="estantes">Estantes</button>
+</nav>
+
+<main>
+  <!-- Cocinas -->
+  <section id="cocinas" class="section">
+    <h2><img class="tiny-logo" src="./images/logo/logo.png" alt="Logo"> Cocinas</h2>
     <div class="slider">
-      <img src="images/cocina1.jpg" alt="Cocina 1" />
-      <img src="images/cocina2.jpg" alt="Cocina 2" />
+      <div class="slide-track">
+        <div class="slide"><img src="./images/cocinas/cocina1.jpg" alt="Cocina 1"></div>
+        <div class="slide"><img src="./images/cocinas/cocina2.jpg" alt="Cocina 2"></div>
+        <div class="slide"><img src="./images/cocinas/cocina3.jpg" alt="Cocina 3"></div>
+      </div>
+      <div class="arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </div>
+      <div class="arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
     </div>
   </section>
 
-  <section id="closets">
-    <h2>Clósets</h2>
+  <!-- Closets -->
+  <section id="closets" class="section">
+    <h2><img class="tiny-logo" src="./images/logo/logo.png" alt="Logo"> Closets</h2>
     <div class="slider">
-      <img src="images/closet1.jpg" alt="Clóset 1" />
-      <img src="images/closet2.jpg" alt="Clóset 2" />
+      <div class="slide-track">
+        <div class="slide"><img src="./images/closets/closet1.jpg" alt="Closet 1"></div>
+        <div class="slide"><img src="./images/closets/closet2.jpg" alt="Closet 2"></div>
+        <div class="slide"><img src="./images/closets/closet3.jpg" alt="Closet 3"></div>
+      </div>
+      <div class="arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </div>
+      <div class="arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
     </div>
   </section>
 
-  <section id="banos">
-    <h2>Baños</h2>
+  <!-- Baños -->
+  <section id="banos" class="section">
+    <h2><img class="tiny-logo" src="./images/logo/logo.png" alt="Logo"> Baños</h2>
     <div class="slider">
-      <img src="images/bano1.jpg" alt="Baño 1" />
+      <div class="slide-track">
+        <div class="slide"><img src="./images/banos/bano1.jpg" alt="Baño 1"></div>
+        <div class="slide"><img src="./images/banos/bano2.jpg" alt="Baño 2"></div>
+        <div class="slide"><img src="./images/banos/bano3.jpg" alt="Baño 3"></div>
+      </div>
+      <div class="arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </div>
+      <div class="arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
     </div>
   </section>
 
-  <section id="estantes">
-    <h2>Estantes</h2>
+  <!-- Puertas -->
+  <section id="puertas" class="section">
+    <h2><img class="tiny-logo" src="./images/logo/logo.png" alt="Logo"> Puertas</h2>
     <div class="slider">
-      <img src="images/estante1.jpg" alt="Estante 1" />
+      <div class="slide-track">
+        <div class="slide"><img src="./images/puertas/puertas1.jpg" alt="Puertas 1"></div>
+        <div class="slide"><img src="./images/puertas/puertas2.jpg" alt="Puertas 2"></div>
+        <div class="slide"><img src="./images/puertas/puertas3.jpg" alt="Puertas 3"></div>
+      </div>
+      <div class="arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </div>
+      <div class="arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
     </div>
   </section>
 
-  <section id="puertas">
-    <h2>Puertas</h2>
+  <!-- Estantes -->
+  <section id="estantes" class="section">
+    <h2><img class="tiny-logo" src="./images/logo/logo.png" alt="Logo"> Estantes</h2>
     <div class="slider">
-      <img src="images/puerta1.jpg" alt="Puerta 1" />
+      <div class="slide-track">
+        <div class="slide"><img src="./images/estantes/estantes1.jpg" alt="Estantes 1"></div>
+        <div class="slide"><img src="./images/estantes/estantes2.jpg" alt="Estantes 2"></div>
+        <div class="slide"><img src="./images/estantes/estantes3.jpg" alt="Estantes 3"></div>
+      </div>
+      <div class="arrow left" aria-label="Anterior">
+        <svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg>
+      </div>
+      <div class="arrow right" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+      </div>
     </div>
   </section>
+</main>
 
-  <footer>
-    <p>📱 WhatsApp: 301 694 7418</p>
-    <p>✉️ Email: casalyne.contacto@gmail.com</p>
-    <p>© 2025 Casa LYNE. Todos los derechos reservados.</p>
-  </footer>
+<footer class="footer">
+  © <span id="year"></span> Casa LYNE — Todos los derechos reservados.
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="./script.js"></script>
 </body>
 </html>
